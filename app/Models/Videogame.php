@@ -12,4 +12,16 @@ class Videogame extends Model
 
     // Primary Key
     protected $primaryKey = 'id';
+
+    //Mass Assignment
+    protected $fillable = [
+        'name',
+        'genre',
+        'release_date',
+        'description',
+        'rating',
+        'price',
+        'is_multiplayer',
+        'platform'
+    ];
 }
